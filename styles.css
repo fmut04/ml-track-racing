@@ -1,0 +1,67 @@
+body {
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+canvas {
+    margin:auto;
+    z-index: -1;
+}
+.control-text {
+    font-size: 24px;
+    color: rgb(50, 50, 50);
+    margin: 20px auto;
+}
+
+.modeChangers {
+    font-size: 40px;
+    color: white;
+    display: inline;
+}
+
+#button-wrapper{
+    margin: 10px auto;
+}
+
+#forwardButton {
+    left: 96vw;
+    color:rgb(50, 50, 50);
+}
+
+.modeChangers:hover{
+    cursor: pointer;
+}
+#speed {
+    margin-top: 48vh;
+}
+#side-panel {
+    background-color: #3d7b6e;
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    left: calc(100vw - 200px);
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+}
+
+.model-button {
+    background-color: #9ef3ac;
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+    width: 150px;
+    height: 6vh; 
+    position: absolute;
+    left: calc(100vw - 100px - 75px);
+    cursor: pointer;
+    border: 1px solid rgb(116, 147, 122);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.64);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.model-button:hover {
+    transition: .2s ease-in;
+    background-color:#5fb56d;
+}
