@@ -18,19 +18,18 @@ function evaluateCars()
 			bestGenCar = savedCars[k];
 		}
 	}
-	if (bestCar != undefined) {
-		if (bestCar.score < bestGenCar.score) {
+
+	if (bestCar == undefined) {
+    bestCar = bestGenCar;
+    return;
+  }
+	if (bestCar.score < bestGenCar.score) {
 			bestCar = bestGenCar;
 			worseCount = 0;
-		}
-		else {
-			worseCount++;
-		}
 	}
 	else {
-		bestCar = bestGenCar;
+			worseCount++;
 	}
-
 }
 
 //Creates new cars for the next generation

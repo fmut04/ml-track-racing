@@ -52,7 +52,6 @@ canvas {
     font-size: 15px;
     width: 150px;
     height: 6vh; 
-    position: absolute;
     left: calc(100vw - 100px - 75px);
     cursor: pointer;
     border: 1px solid rgb(116, 147, 122);
@@ -64,4 +63,13 @@ canvas {
 .model-button:hover {
     transition: .2s ease-in;
     background-color:#5fb56d;
+}
+
+#slider {
+    width: 150px;
+    height: 6vh;
+    margin: auto;
+    background-color: #9ef3ac;
+    border: 1px solid rgb(116, 147, 122);
+    border-radius: 15px;
 }

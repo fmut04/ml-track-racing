@@ -54,8 +54,10 @@ resizeCanvas(window.innerWidth - 200, window.innerHeight)
 
 function createCycleSlider() {
   cycles = createSlider(1, 20, 1);
-  cycles.addClass('model-button')
-  cycles.position(undefined, windowHeight - 350);
+  cycles.parent('slider-container');
+  cycles.addClass('slider')
+ // cycles.position(undefined, windowHeight - 350);
+ 
 }
 
 //Game loop
